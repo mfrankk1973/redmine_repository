@@ -1,0 +1,7 @@
+# Bulgarian translation by Ivan Cenov
+# i_cenov@botevgrad.com
+bg:
+  Download: "Изтегляне"
+  warning_no_entries_selected: "Не е избрано нищо за изтегляне."
+  error_in_getting_files: "Грешка при четене на файловете" 
+  permission_operations: "Групово изтегляне на файлове в един zip архив"

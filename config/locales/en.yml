@@ -1,0 +1,7 @@
+# English strings go here for Rails i18n
+en:
+  Download: "Download"
+  warning_no_entries_selected: "No entries selected"
+  error_in_getting_files: "Error when getting files"
+  permission_operations: "Download files in one zip archive" 
+  

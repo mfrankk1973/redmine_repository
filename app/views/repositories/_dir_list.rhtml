@@ -1,0 +1,28 @@
+<% form_tag({:action => "entries_operation"}, :method => :post, :id => "Entries") do %>
+<%= hidden_field_tag("action") %>
+<%= hidden_field_tag("path[]", @path) %>
+<table class="list entries" id="browser">
+<thead>
+<tr id="root">
+<th>
+<%= check_box_tag('check_tree', 'check_tree', false, :style => "float: left",  :onClick => "checkTree();") if  authorize_for('repositories', 'entries_operation')%>
+<%= l(:field_name) %></th>
+<th><%= l(:field_filesize) %></th>
+<th><%= l(:label_revision) %></th>
+<th><%= l(:label_age) %></th>
+<th><%= l(:field_author) %></th>
+<th><%= l(:field_comments) %></th>
+</tr>
+</thead>
+<tbody>
+<%= render :partial => 'dir_list_content' %>
+</tbody>
+</table>
+<% if  authorize_for('repositories', 'entries_operation')  %>
+<div style="float: right;">
+	<%= submit_tag(l(:Download), :name => "download_entries") %>
+	<%= submit_tag("Email", :name => "email_entries", :style => "visibility: collapse") %>
+</div>
+<% end %>
+<p>&nbsp</p>
+<% end %>
