@@ -1,0 +1,6 @@
+# English strings go here for Rails i18n
+ru:
+  Download: "Скачать"
+  warning_no_entries_selected: "Ничего не выбрано"
+  error_in_getting_files: "Ошибка при доступе к файлам" 
+  permission_operations: "Групповая загрузка файлов одним архивом"
